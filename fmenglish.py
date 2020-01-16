@@ -111,13 +111,13 @@ def choose_group(message):
         bot.send_message(message.chat.id, "Выберите группу", reply_markup=keyboard2);
         bot.register_next_step_handler(message, get_group);
 
-    elif id1 == cfg.olga_id:
-        keyboard2.add(bt7, bt8)
+    elif id1 == cfg.sofia_id:
+        keyboard2.add(bt1, bt4, bt6, bt11)
         bot.send_message(message.chat.id, "Выберите группу", reply_markup=keyboard2);
         bot.register_next_step_handler(message, get_group);
 
-    elif id1 == cfg.olga_id:
-        keyboard2.add(bt7, bt8)
+    elif id1 == cfg.evgenya_id:
+        keyboard2.add(bt2, bt3, bt9)
         bot.send_message(message.chat.id, "Выберите группу", reply_markup=keyboard2);
         bot.register_next_step_handler(message, get_group);
 
@@ -182,13 +182,13 @@ def mark_lesson(message):
         bot.send_message(message.chat.id, "Выберите группу", reply_markup=keyboard3);
         bot.register_next_step_handler(message, get_list);
 
-    elif id1 == cfg.olga_id:
-        keyboard3.add(bt7, bt8)
+    elif id1 == cfg.evgenya_id:
+        keyboard3.add(bt2, bt3, bt9)
         bot.send_message(message.chat.id, "Выберите группу", reply_markup=keyboard3);
         bot.register_next_step_handler(message, get_list);
 
-    elif id1 == cfg.olga_id:
-        keyboard3.add(bt7, bt8)
+    elif id1 == cfg.sofia_id:
+        keyboard3.add(bt1, bt4, bt6, bt11)
         bot.send_message(message.chat.id, "Выберите группу", reply_markup=keyboard3);
         bot.register_next_step_handler(message, get_list);
 
